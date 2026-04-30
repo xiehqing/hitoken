@@ -1,6 +1,7 @@
 package hertz
 
 import (
+	"github.com/xiehqing/hitoken/htputil"
 	"time"
 
 	"github.com/xiehqing/hitoken/core"
