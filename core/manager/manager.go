@@ -795,6 +795,7 @@ func (m *Manager) getLoginIDByToken(tokenValue string) (string, error) {
 // getTokenInfo Gets token information | 获取Token信息
 func (m *Manager) getTokenInfo(tokenValue string, checkState ...bool) (*TokenInfo, error) {
 	tokenKey := m.getTokenKey(tokenValue)
+	fmt.Printf("tokenKey:%s", tokenKey)
 	data, err := m.storage.Get(tokenKey)
 	if err != nil || data == nil {
 		return nil, err
